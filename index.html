@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Author: Dmytro Lymarenko -->
+<html>
+<head>
+	<title>Title of the document</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="three.min.js"></script>
+	<script src="OrbitControls.js"></script>
+</head>
+<body class="row">
+	<div id="scene3d"></div>
+	<div class="params">
+		<h2>Параметри</h2>
+		<div class="column">
+			<div>
+				<label for="inputS">S = </label>
+				<input type="text" id="inputS" value="1">
+			</div>
+			<div>
+				<label for="inputR">R = </label>
+				<input type="text" id="inputR" value="50">
+			</div>
+			<div>
+				<label for="inputB">B = </label>
+				<input type="text" id="inputB" value="1">
+			</div>
+		</div>
+		<hr>
+		<div class="column">
+			<div>
+				<label for="inputTMax">tmax = </label>
+				<input type="text" id="inputTMax" value="10">
+			</div>
+			<div>
+				<label for="inputH">h = </label>
+				<input type="text" id="inputH" value="0.01">
+			</div>
+		</div>
+		<hr>
+		<div class="column">
+			<div>
+				<label for="inputX0">x(0) = </label>
+				<input type="text" id="inputX0" value="13">
+			</div>
+			<div>
+				<label for="inputY0">y(0) = </label>
+				<input type="text" id="inputY0" value="13">
+			</div>
+			<div>
+				<label for="inputZ0">z(0) = </label>
+				<input type="text" id="inputZ0" value="33">
+			</div>
+		</div>
+		<h2>Криві</h2>
+		<div class="column">
+			<div>
+				<input id="checkboxXY" checked type="checkbox" value="XY">
+				<label for="checkboxXY">Проекція на XY</label>
+			</div>
+			<div>
+				<input id="checkboxXZ" checked type="checkbox" value="XZ">
+				<label for="checkboxXZ">Проекція на XZ</label>
+			</div>
+			<div>
+				<input id="checkboxYZ" checked type="checkbox" value="YZ">
+				<label for="checkboxYZ">Проекція на YZ</label>
+			</div>
+			<div>
+				<input id="checkboxXYZ" checked type="checkbox" value="XYZ">
+				<label for="checkboxXYZ">Крива в просторі</label>
+			</div>
+		</div>
+		<br>
+		<button id="buttonBuild">Побудувати</button>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>

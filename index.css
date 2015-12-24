@@ -1,0 +1,31 @@
+body {
+	margin: 10px;
+	padding: 0;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+label {
+	min-width: 50px;
+	display: inline-block;
+}
+
+input {
+	margin: 2px;
+}
+
+canvas {
+	border: 1px solid black;
+}
+
+.params {
+	padding-left: 15px;
+}
